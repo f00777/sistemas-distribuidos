@@ -1,0 +1,143 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bytebytego2024reddit}{online}{}
+      \name{author}{1}{}{%
+        {{hash=70a5afb36b45b100397ff6b4221b823b}{%
+           family={ByteByteGo},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{70a5afb36b45b100397ff6b4221b823b}
+      \strng{fullhash}{70a5afb36b45b100397ff6b4221b823b}
+      \strng{bibnamehash}{70a5afb36b45b100397ff6b4221b823b}
+      \strng{authorbibnamehash}{70a5afb36b45b100397ff6b4221b823b}
+      \strng{authornamehash}{70a5afb36b45b100397ff6b4221b823b}
+      \strng{authorfullhash}{70a5afb36b45b100397ff6b4221b823b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reddit's Core Architecture}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://bytebytego.com/guides/reddits-core-architecture/
+      \endverb
+      \verb{url}
+      \verb https://bytebytego.com/guides/reddits-core-architecture/
+      \endverb
+    \endentry
+    \entry{interteam2026reddit}{online}{}
+      \name{author}{1}{}{%
+        {{hash=119a61eef64c3714c9309b06d56f38ad}{%
+           family={Furrh},
+           familyi={F\bibinitperiod},
+           given={Cole},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{119a61eef64c3714c9309b06d56f38ad}
+      \strng{fullhash}{119a61eef64c3714c9309b06d56f38ad}
+      \strng{bibnamehash}{119a61eef64c3714c9309b06d56f38ad}
+      \strng{authorbibnamehash}{119a61eef64c3714c9309b06d56f38ad}
+      \strng{authornamehash}{119a61eef64c3714c9309b06d56f38ad}
+      \strng{authorfullhash}{119a61eef64c3714c9309b06d56f38ad}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reddit Statistics 2026: Traffic, Users, Ads and Revenue}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.interteammarketing.com/blog/reddit-statistics-2026
+      \endverb
+      \verb{url}
+      \verb https://www.interteammarketing.com/blog/reddit-statistics-2026
+      \endverb
+    \endentry
+    \entry{himalayas2024reddit}{online}{}
+      \name{author}{1}{}{%
+        {{hash=febe1d6f80b054748fe62c999f74055f}{%
+           family={Himalayas},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{febe1d6f80b054748fe62c999f74055f}
+      \strng{fullhash}{febe1d6f80b054748fe62c999f74055f}
+      \strng{bibnamehash}{febe1d6f80b054748fe62c999f74055f}
+      \strng{authorbibnamehash}{febe1d6f80b054748fe62c999f74055f}
+      \strng{authornamehash}{febe1d6f80b054748fe62c999f74055f}
+      \strng{authorfullhash}{febe1d6f80b054748fe62c999f74055f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reddit Tech Stack and Tools}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://himalayas.app/companies/reddit/tech-stack
+      \endverb
+      \verb{url}
+      \verb https://himalayas.app/companies/reddit/tech-stack
+      \endverb
+    \endentry
+    \entry{stackshare2024reddit}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ec997cb076bfe19b7de444361df116d9}{%
+           family={StackShare},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec997cb076bfe19b7de444361df116d9}
+      \strng{fullhash}{ec997cb076bfe19b7de444361df116d9}
+      \strng{bibnamehash}{ec997cb076bfe19b7de444361df116d9}
+      \strng{authorbibnamehash}{ec997cb076bfe19b7de444361df116d9}
+      \strng{authornamehash}{ec997cb076bfe19b7de444361df116d9}
+      \strng{authorfullhash}{ec997cb076bfe19b7de444361df116d9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reddit Tech Stack}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://stackshare.io/reddit/reddit
+      \endverb
+      \verb{url}
+      \verb https://stackshare.io/reddit/reddit
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
