@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.24)  24 AUG 2026 22:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.24)  24 AUG 2026 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -909,10 +909,20 @@ Package biblatex Info: ... file 'blx-compat.def' found.
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back bibtex backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count482
 \c@textcitetotal=\count483
@@ -1020,7 +1030,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+PTSans-TLF on input 
-line 32.
+line 33.
 
 (/usr/share/texmf-dist/tex/latex/paratype/T1PTSans-TLF.fd
 File: T1PTSans-TLF.fd 2011/05/04 (autoinst with patch) Font definitions for T1/
@@ -1028,24 +1038,24 @@ PTSans-TLF.
 ) (./rect-office.aux)
 \openout1 = `rect-office.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1103,60 +1113,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 33.
 
 (./rect-office.out) (./rect-office.out)
 \@outlinefile=\write6
 \openout6 = `rect-office.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 33.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/b/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/b/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
+(Font)                  OT1/cmr/bx/n --> T1/PTSans-TLF/b/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/PTSans-TLF/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> T1/PTSans-TLF/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/PTSans-TLF/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
+(Font)                  OT1/cmss/bx/n --> T1/PTSans-TLF/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/PTSans-TLF/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> T1/PTSans-TLF/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/PTSans-TLF/m/it on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
+(Font)                  OT1/cmr/bx/it --> T1/PTSans-TLF/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> T1/PTMono-TLF/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  T1/PTSans-TLF/m/n --> T1/PTSans-TLF/b/n on input line 3
-2.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/PTSans-TLF/m/it --> T1/PTSans-TLF/b/it on input line
- 32.
+ 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 32.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  T1/PTSans-TLF/b/n --> T1/PTSans-TLF/b/n on input line 3
-2.
+3.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  T1/PTSans-TLF/m/n --> T1/PTSans-TLF/b/n on input line 3
-2.
+3.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/PTSans-TLF/m/it --> T1/PTSans-TLF/b/it on input line
- 32.
+ 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/PTMono-TLF/m/n --> T1/PTMono-TLF/b/n on input line 3
-2.
+3.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -1190,29 +1200,32 @@ File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `rect-office.bcf'.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout5 = `rect-office-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'rect-office.bbl' found.
 
 (./rect-office.bbl)
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
  (./rect-office.nav)
 LaTeX Font Info:    Trying to load font information for T1+PTSansCaption-TLF on
- input line 32.
+ input line 33.
 
 (/usr/share/texmf-dist/tex/latex/paratype/T1PTSansCaption-TLF.fd
 File: T1PTSansCaption-TLF.fd 2014/02/02 Font definitions for T1/PTSansCaption-T
 LF.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1221,25 +1234,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <img/UDP_Logo_sitioLCH.jpg, id=31, 401.5pt x 401.5pt>
 File: img/UDP_Logo_sitioLCH.jpg Graphic file (type jpg)
 <use img/UDP_Logo_sitioLCH.jpg>
-Package pdftex.def Info: img/UDP_Logo_sitioLCH.jpg  used on input line 37.
+Package pdftex.def Info: img/UDP_Logo_sitioLCH.jpg  used on input line 38.
 (pdftex.def)             Requested size: 79.66756pt x 79.6678pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/paratype/ptsans_t1.enc} <./img/UDP_Logo_sitioLCH.jpg>]
-
-LaTeX Warning: Citation 'stackshare2024reddit' on page 2 undefined on input lin
-e 60.
-
-[2
+/enc/dvips/paratype/ptsans_t1.enc} <./img/UDP_Logo_sitioLCH.jpg>] [2
 
 ]
-
-LaTeX Warning: Citation 'interteam2026reddit' on page 3 undefined on input line
- 108.
-
-
-Overfull \vbox (16.73277pt too high) detected at line 108
+Overfull \vbox (16.73277pt too high) detected at line 109
  []
 
 [3
@@ -1247,89 +1250,52 @@ Overfull \vbox (16.73277pt too high) detected at line 108
 ] [4
 
 ]
-<img/0356-the-core-reddit-architecture.png, id=157, 5623.0075pt x 7078.445pt>
+<img/0356-the-core-reddit-architecture.png, id=161, 5623.0075pt x 7078.445pt>
 File: img/0356-the-core-reddit-architecture.png Graphic file (type png)
 <use img/0356-the-core-reddit-architecture.png>
 Package pdftex.def Info: img/0356-the-core-reddit-architecture.png  used on inp
-ut line 157.
+ut line 158.
 (pdftex.def)             Requested size: 127.4989pt x 160.50023pt.
-
-
-LaTeX Warning: Citation 'bytebytego2024reddit' on page 5 undefined on input lin
-e 157.
-
-[5
+ [5
 
  <./img/0356-the-core-reddit-architecture.png (PNG copy)>]
-
-LaTeX Warning: Citation 'bytebytego2024reddit' on page 6 undefined on input lin
-e 173.
-
-
-Overfull \vbox (10.69302pt too high) detected at line 173
+Overfull \vbox (10.69302pt too high) detected at line 174
  []
 
 [6
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+PTMono-TLF on input 
-line 209.
+line 210.
  (/usr/share/texmf-dist/tex/latex/paratype/T1PTMono-TLF.fd
 File: T1PTMono-TLF.fd 2014/02/02 Font definitions for T1/PTMono-TLF.
 )
 LaTeX Info: Symbol \textrightarrow not provided by
             font family PTSans-TLF in TS1 encoding.
-            Default family used instead on input line 209.
+            Default family used instead on input line 210.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family PTSans-TLF in TS1 encoding.
-            Default family used instead on input line 209.
+            Default family used instead on input line 210.
 
-
-LaTeX Warning: Citation 'stackshare2024reddit' on page 7 undefined on input lin
-e 209.
-
-
-LaTeX Warning: Citation 'himalayas2024reddit' on page 7 undefined on input line
- 209.
-
-
-Overfull \vbox (19.3557pt too high) detected at line 209
+Overfull \vbox (19.35121pt too high) detected at line 210
  []
 
 [7
 
 {/usr/share/texmf-dist/fonts/enc/dvips/paratype/ptmono_t1.enc}{/usr/share/texmf
 -dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-LaTeX Warning: Citation 'bytebytego2024reddit' on page 8 undefined on input lin
-e 253.
-
-
-Overfull \vbox (7.78235pt too high) detected at line 253
+Overfull \vbox (7.77786pt too high) detected at line 254
  []
 
 [8
 
 ]
-
-LaTeX Warning: Citation 'bytebytego2024reddit' on page 9 undefined on input lin
-e 289.
-
-
-LaTeX Warning: Citation 'himalayas2024reddit' on page 9 undefined on input line
- 289.
-
-
-Overfull \vbox (22.42543pt too high) detected at line 289
+Overfull \vbox (22.42094pt too high) detected at line 290
  []
 
 [9
 
-]
-
-LaTeX Warning: Empty bibliography on input line 295.
-
-[10
+] [10
 
 ]
 \tf@nav=\write7
@@ -1346,40 +1312,32 @@ LaTeX Warning: Empty bibliography on input line 295.
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `rect-office.out' has not changed.
 (rerunfilecheck)             Checksum: 63105C40BD4011B2EAF88FFC7D349CDB;392.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                rect-office
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'rect-office.run.xml'.
 \openout1 = `rect-office.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31367 strings out of 469515
- 608241 string characters out of 5470807
- 1435796 words of memory out of 5000000
- 59434 multiletter control sequences out of 15000+600000
- 841110 words of font info for 116 fonts, out of 8000000 for 9000
+ 31518 strings out of 469515
+ 612391 string characters out of 5470807
+ 1226049 words of memory out of 5000000
+ 59576 multiletter control sequences out of 15000+600000
+ 827299 words of font info for 116 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,16n,123p,1247b,1748s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,123p,1885b,1748s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/paratype/ptsans/PTC55F.pfb></usr/share/tex
 mf-dist/fonts/type1/paratype/ptsans/PTC75F.pfb></usr/share/texmf-dist/fonts/typ
 e1/paratype/ptmono/PTM55F.pfb></usr/share/texmf-dist/fonts/type1/paratype/ptsan
-s/PTS55F.pfb></usr/share/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfss1095.pfb>
-Output written on rect-office.pdf (10 pages, 1167771 bytes).
+s/PTS55F.pfb></usr/share/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></us
+r/share/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfss1095.pfb>
+Output written on rect-office.pdf (10 pages, 1180131 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 29 named destinations out of 1000 (max. 500000)
  703 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,114 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{bytebytego2024reddit}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={ByteByteGo},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Reddit's Core Architecture}
+    \verb{url}
+    \verb https://bytebytego.com/guides/reddits-core-architecture/
+    \endverb
+    \field{year}{2024}
+    \field{urlday}{23}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{interteam2026reddit}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=FC}{%
+         family={Furrh},
+         familyi={F\bibinitperiod},
+         given={Cole},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FC1}
+    \strng{fullhash}{FC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Reddit Statistics 2026: Traffic, Users, Ads and Revenue}
+    \verb{url}
+    \verb https://www.interteammarketing.com/blog/reddit-statistics-2026
+    \endverb
+    \field{year}{2026}
+    \field{urlday}{23}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{himalayas2024reddit}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={Himalayas},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Reddit Tech Stack and Tools}
+    \verb{url}
+    \verb https://himalayas.app/companies/reddit/tech-stack
+    \endverb
+    \field{year}{2024}
+    \field{urlday}{23}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{stackshare2024reddit}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={StackShare},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Reddit Tech Stack}
+    \verb{url}
+    \verb https://stackshare.io/reddit/reddit
+    \endverb
+    \field{year}{2024}
+    \field{urlday}{23}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+\enddatalist
+\endinput
