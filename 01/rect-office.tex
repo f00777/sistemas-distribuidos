@@ -23,7 +23,7 @@
 
 \title[Reddit Tech Stack]{Reddit Tech Stack}
 \subtitle[Distributed Systems]{Distributed Systems}
-\author[F. Maturana]{Felipe Maturana\texorpdfstring{\\}{, }felipe.maturana1@mail.udp.cl}
+\author[F. Maturana, A. Gaona]{Felipe Maturana, Alejandro Gaona\texorpdfstring{\\}{, }felipe.maturana1@mail.udp.cl, alejandro.gaona@mail.udp.cl}
 \institute{}
 \date{\today}
 \subject{Distributed Systems}
@@ -72,25 +72,37 @@
         \end{itemize}
       \end{block}
       \vspace{1mm}
-      \begin{block}{Content \& Engagement}
-        \begin{itemize}
-          \item \textbf{3.14B} interactions \& comments / year
-          \item \textbf{1.4B} native video views / month
-          \item \textbf{70M+} on-platform searches / week
-          \item \textbf{100k+} subreddits (500+ >1M members)
-        \end{itemize}
-      \end{block}
+      %\begin{block}{Content \& Engagement}
+      %  \begin{itemize}
+      %    \item \textbf{3.14B} interactions \& comments / year
+      %    \item \textbf{1.4B} native video views / month
+      %    \item \textbf{70M+} on-platform searches / week
+      %    \item \textbf{100k+} subreddits (500+ >1M members)
+      %  \end{itemize}
+      %\end{block}
     \end{column}
     \begin{column}{.48\textwidth}
-      \begin{alertblock}{Challenge}
-        Serving this volume requires a backend handling \textbf{massive concurrent reads and writes} with low latency — a distributed systems problem.
-      \end{alertblock}
-      \vspace{1mm}
-      \begin{exampleblock}{Transparency problem}
-        From the user perspective, Reddit \emph{looks like a single system} (\textbf{distribution transparency}), but achieving this across thousands of machines poses major challenges.
-      \end{exampleblock}
+      %\begin{alertblock}{Challenge}
+      %  Serving this volume requires a backend handling \textbf{massive concurrent reads and writes} with low latency — a distributed systems problem.
+      %\end{alertblock}
+      \begin{block}{Content \& Engagement}
+      	\begin{itemize}
+      		\item \textbf{3.14B} interactions \& comments / year
+      		\item \textbf{1.4B} native video views / month
+      		\item \textbf{70M+} on-platform searches / week
+      		\item \textbf{100k+} subreddits (500+ >1M members)
+      	\end{itemize}
+      \end{block}
+      %\vspace{1mm}
+      %\begin{exampleblock}{Transparency problem}
+      %  From the user perspective, Reddit \emph{looks like a single system} (\textbf{distribution transparency}), but achieving this across thousands of machines poses major challenges.
+      %\end{exampleblock}
     \end{column}
   \end{columns}
+  \vspace{4mm}
+  \begin{alertblock}{Challenge}
+  	Serving this volume requires a backend handling \textbf{massive concurrent reads and writes} with low latency — a distributed systems problem.
+  \end{alertblock}
   \vspace{1mm}
   {\footnotesize Source: \cite{interteam2026reddit}}
 \end{frame}
@@ -128,10 +140,10 @@
       \end{block}
     \end{column}
   \end{columns}
-  \vspace{4mm}
-  \begin{alertblock}{Transparency as a double-edged sword}
-    Distribution \textbf{transparency} (access, location, replication, failure) is the goal, but it conflicts with consistency and performance. Reddit must choose \emph{which} transparency properties to sacrifice under load — a core trade-off of distributed systems.
-  \end{alertblock}
+  %\vspace{2mm}
+  %\begin{alertblock}{Transparency as a double-edged sword}
+  %  Distribution \textbf{transparency} (access, location, replication, failure) is the goal, but it conflicts with consistency and performance. Reddit must choose \emph{which} transparency properties to sacrifice under load — a core trade-off of distributed systems.
+  %\end{alertblock}
 \end{frame}
 
 %% ── Slide 5: Architecture Overview ──────────────────────────────────────────
@@ -209,29 +221,30 @@
         \end{itemize}
       \end{block}
       \vspace{2mm}
-      \begin{block}{Apache Cassandra}
-        \begin{itemize}
-          \item Distributed, multi-datacenter NoSQL
-          \item Used for vote counts and time-series data
-          \item \alert{Tunable consistency} model (CAP trade-off)
-        \end{itemize}
+      \begin{block}{Redis}
+      	\begin{itemize}
+      		\item Structured cache + pub/sub broker
+      		\item Stores leaderboards, rate limits, locks
+      		%\item Acts as CDC event store (Change Data Capture)
+      	\end{itemize}
       \end{block}
+      
     \end{column}
     \begin{column}{.48\textwidth}
-      \begin{block}{Memcached}
-        \begin{itemize}
-          \item First caching layer in front of Postgres
-          \item Caches rendered posts, session tokens
-          \item Absorbs the majority of read traffic
-        \end{itemize}
+      \begin{block}{Apache Cassandra}
+      	\begin{itemize}
+      		\item Distributed, multi-datacenter NoSQL
+      		\item Used for vote counts and time-series data
+      		\item \alert{Tunable consistency} model (CAP trade-off)
+      	\end{itemize}
       \end{block}
       \vspace{2mm}
-      \begin{block}{Redis}
-        \begin{itemize}
-          \item Structured cache + pub/sub broker
-          \item Stores leaderboards, rate limits, locks
-          \item Acts as CDC event store (Change Data Capture)
-        \end{itemize}
+      \begin{block}{Memcached}
+      	\begin{itemize}
+      		\item First caching layer in front of Postgres
+      		\item Caches rendered posts, session tokens
+      		\item Absorbs the majority of read traffic
+      	\end{itemize}
       \end{block}
     \end{column}
   \end{columns}
@@ -256,7 +269,7 @@
           \item Debezium tails PostgreSQL WAL logs
           \item Publishes change events to Kafka topics
           \item Consumers: search index, spam detection, analytics
-          \item Enables \textbf{eventual consistency} without tight coupling
+          %\item Enables \textbf{eventual consistency} without tight coupling
         \end{itemize}
       \end{block}
     \end{column}
