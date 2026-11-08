@@ -41,7 +41,7 @@
 \section{Overview}
 \begin{frame}{What is Reddit?}
   \begin{columns}[T]
-    \begin{column}{.62\textwidth}
+    \begin{column}{.57\textwidth}
       \begin{itemize}
         \item Social news aggregation, content rating and discussion platform
         \item Founded in 2005, now one of the \alert{most visited websites} in the world
@@ -50,43 +50,37 @@
         \item More than \textbf{100,000 active communities} covering virtually every topic
       \end{itemize}
     \end{column}
-    \begin{column}{.35\textwidth}
-      \begin{block}{Key concept}
-        Reddit is essentially a \textbf{massive distributed voting and conversation engine}, requiring extreme reliability and scale.
+    \begin{column}{.40\textwidth}
+      \begin{block}{Motivation of Choice}
+        \begin{itemize}
+          \item \textbf{Real-time distributed engine:} Massive concurrent voting and nested comment trees at global scale.
+          \item \textbf{Architectural evolution:} Paradigm case of migrating a legacy Python monolith (\texttt{r2}) to \textbf{Go microservices}, \textbf{polyglot persistence}, and \textbf{event-driven CDC}.
+        \end{itemize}
       \end{block}
     \end{column}
   \end{columns}
   \vspace{2mm}
-  {\footnotesize Source: \cite{stackshare2024reddit}}
+  {\footnotesize Source: \cite{stackshare2024reddit}, \cite{bytebytego2024reddit}}
 \end{frame}
 
 %% ── Slide 3: Scale ───────────────────────────────────────────────────────────
 \begin{frame}{Reddit at Scale}
+  \vspace{-3mm}
   \begin{columns}[T]
     \begin{column}{.48\textwidth}
       \begin{block}{Users \& Traffic}
+        \footnotesize
         \begin{itemize}
-          \item \textbf{116M} Daily Active Users (DAUs, +19.3\% YoY)
+          \item \textbf{116M} Daily Active Users (+19.3\% YoY)
           \item \textbf{443.8M} Weekly Active Users (WAUs)
           \item \textbf{2.2B+} visits / month (78\% mobile)
           \item \textbf{56.7\%} browse logged-out (anonymous)
         \end{itemize}
       \end{block}
-      \vspace{1mm}
-      %\begin{block}{Content \& Engagement}
-      %  \begin{itemize}
-      %    \item \textbf{3.14B} interactions \& comments / year
-      %    \item \textbf{1.4B} native video views / month
-      %    \item \textbf{70M+} on-platform searches / week
-      %    \item \textbf{100k+} subreddits (500+ >1M members)
-      %  \end{itemize}
-      %\end{block}
     \end{column}
     \begin{column}{.48\textwidth}
-      %\begin{alertblock}{Challenge}
-      %  Serving this volume requires a backend handling \textbf{massive concurrent reads and writes} with low latency — a distributed systems problem.
-      %\end{alertblock}
       \begin{block}{Content \& Engagement}
+        \footnotesize
       	\begin{itemize}
       		\item \textbf{3.14B} interactions \& comments / year
       		\item \textbf{1.4B} native video views / month
@@ -94,18 +88,18 @@
       		\item \textbf{100k+} subreddits (500+ >1M members)
       	\end{itemize}
       \end{block}
-      %\vspace{1mm}
-      %\begin{exampleblock}{Transparency problem}
-      %  From the user perspective, Reddit \emph{looks like a single system} (\textbf{distribution transparency}), but achieving this across thousands of machines poses major challenges.
-      %\end{exampleblock}
     \end{column}
   \end{columns}
-  \vspace{4mm}
-  \begin{alertblock}{Challenge}
-  	Serving this volume requires a backend handling \textbf{massive concurrent reads and writes} with low latency — a distributed systems problem.
+  \vspace{0.5mm}
+  \begin{alertblock}{Historical Availability \& Notable Outages}
+    \footnotesize
+    \begin{itemize}
+      \item \textbf{$\sim$99.9\% Historical Uptime} (\texttt{redditstatus.com}): Evolved from frequent \emph{``You Broke Reddit''} monolith overloads to resilient multi-region cloud infrastructure.
+      \item \textbf{Pi-Day Outage (Mar 14, 2023 — 314 min):} K8s upgrade (\texttt{v1.23}$\rightarrow$\texttt{1.24}) removed the legacy \texttt{master} node label, breaking Calico BGP route reflectors and cluster DNS.
+      \item \textbf{Fastly CDN Outage (Jun 8, 2021 — $\sim$50 min):} Edge config bug crashed 85\% of global POPs (\texttt{503} errors), motivating multi-CDN fault isolation.
+    \end{itemize}
   \end{alertblock}
-  \vspace{1mm}
-  {\footnotesize Source: \cite{interteam2026reddit}}
+  {\scriptsize Source: \cite{interteam2026reddit}, \cite{redditstatus2026}, \cite{redditeng2023piday}, \cite{fastly2021outage}}
 \end{frame}
 
 %% ── Slide 4: Distributed Systems Goals ───────────────────────────────────────

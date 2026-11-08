@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,8 +16,8 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global/global}
-  \entry{bytebytego2024reddit}{online}{}{}
+\datalist[entry]{nty/global//global/global}
+  \entry{bytebytego2024reddit}{online}{}
     \name{author}{1}{}{%
       {{hash=B}{%
          family={ByteByteGo},
@@ -40,7 +40,7 @@
     \field{urlyear}{2026}
   \endentry
 
-  \entry{interteam2026reddit}{online}{}{}
+  \entry{interteam2026reddit}{online}{}
     \name{author}{1}{}{%
       {{hash=FC}{%
          family={Furrh},
@@ -65,7 +65,7 @@
     \field{urlyear}{2026}
   \endentry
 
-  \entry{himalayas2024reddit}{online}{}{}
+  \entry{himalayas2024reddit}{online}{}
     \name{author}{1}{}{%
       {{hash=H}{%
          family={Himalayas},
@@ -88,7 +88,79 @@
     \field{urlyear}{2026}
   \endentry
 
-  \entry{stackshare2024reddit}{online}{}{}
+  \entry{redditeng2023piday}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Reddit Engineering (r/RedditEng)}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{You Broke Reddit: The Pi-Day Outage}
+    \verb{url}
+    \verb https://www.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_
+    \verb the_piday_outage/
+    \endverb
+    \field{year}{2023}
+    \field{urlday}{08}
+    \field{urlmonth}{11}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{redditstatus2026}{online}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Reddit Inc.}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Reddit Status --- Historical Uptime and Incident History}
+    \verb{url}
+    \verb https://www.redditstatus.com/
+    \endverb
+    \field{year}{2026}
+    \field{urlday}{08}
+    \field{urlmonth}{11}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{fastly2021outage}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RN}{%
+         family={Rockwell},
+         familyi={R\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RN1}
+    \strng{fullhash}{RN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Summary of June 8 Outage}
+    \verb{url}
+    \verb https://www.fastly.com/blog/summary-of-june-8-outage
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{08}
+    \field{urlmonth}{11}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{stackshare2024reddit}{online}{}
     \name{author}{1}{}{%
       {{hash=S}{%
          family={StackShare},

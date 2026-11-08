@@ -8,11 +8,16 @@ This document serves as the comprehensive report and script for the **Reddit Tec
 
 Reddit is a social news aggregation, content rating, and discussion website. Users submit content (links, text, images, or videos) to communities called **subreddits**, and other users vote content up or down and engage in threaded discussions. Founded in 2005, Reddit is now one of the most visited websites in the world, with more than 100,000 active communities covering virtually every topic imaginable.
 
-**Sources:** [StackShare](https://stackshare.io/reddit/reddit), [Himalayas](https://himalayas.app/companies/reddit/tech-stack)
+### Motivation of Choice
+Reddit was chosen as our case study due to two primary technical justifications:
+1. **Real-time Distributed Voting Engine:** Unlike read-heavy static social media, Reddit operates as a massive distributed consensus and conversation system. Handling hundreds of millions of concurrent votes and highly dynamic, nested comment trees with near-instantaneous global reflection demands extreme consistency, low latency, and horizontal scalability.
+2. **Architectural Evolution Paradigm:** Reddit represents an exemplary real-world case of architectural modernization: migrating away from a brittle Python monolith (`r2`) toward high-concurrency **Go microservices**, **polyglot persistence** (PostgreSQL EAV + Apache Cassandra NoSQL), multi-layer caching, and **event-driven Change Data Capture (CDC)** via Kafka and Debezium.
+
+**Sources:** [StackShare](https://stackshare.io/reddit/reddit), [Himalayas](https://himalayas.app/companies/reddit/tech-stack), [ByteByteGo](https://bytebytego.com/guides/reddits-core-architecture/)
 
 ---
 
-## 2. Reddit at Scale
+## 2. Reddit at Scale & Historical Availability
 
 Understanding the scale of Reddit is critical to appreciating why it requires such a complex distributed backend:
 
@@ -25,13 +30,26 @@ Understanding the scale of Reddit is critical to appreciating why it requires su
 - **70+ million** searches per week on-platform
 - **100,000+** active subreddits (with over 500 subreddits having >1 million members)
 
-This volume of traffic introduces the **distribution transparency** problem: from the user's perspective, Reddit looks and behaves like a single, unified system. However, behind the scenes, thousands of machines must coordinate seamlessly. This is the core goal of distributed systems design — but achieving it while maintaining performance is a major engineering challenge. Transparency types include:
+### Historical Availability & Notable Outages
+Reddit's availability profile reflects its evolution from a monolithic application into a resilient distributed system:
+
+- **$\sim$99.9% Historical Uptime:** While early-stage Reddit was famous for its frequent *"You Broke Reddit"* error screen featuring Snoo due to database saturation during viral events, modern Reddit achieves near three-nines ($\sim$99.9%) availability across its core components tracked via **`redditstatus.com`**.
+- **Pi-Day Outage (March 14, 2023 — 314 minutes):**
+  - *Trigger:* Routine upgrade of Reddit's largest Kubernetes cluster (>1,000 nodes) from version `1.23` to `1.24`.
+  - *Root Cause:* Kubernetes 1.24 deprecated and purged the legacy node label `node-role.kubernetes.io/master` in favor of `node-role.kubernetes.io/control-plane`. Reddit's internal network routing relied on **Calico route reflectors** targeted specifically via the deprecated `master` label. The upgrade caused node selectors to match zero nodes; Calico route reflectors failed to schedule, BGP peering dropped, in-cluster DNS broke, and all inter-service communication failed.
+  - *Distributed Lesson:* Highlights the perils of control-plane coupling in containerized orchestrators and the difficulty of zero-downtime rollbacks when orchestrator state schemas change.
+- **Fastly CDN Edge Outage (June 8, 2021 — $\sim$50 minutes):**
+  - *Trigger:* A dormant software bug in Fastly's edge nodes was inadvertently triggered by a valid customer configuration change.
+  - *Root Cause:* Cascading failures crashed 85% of Fastly's global Points of Presence (POPs), returning `503 Service Unavailable` across the web (impacting Reddit, Twitch, GitHub, and major news outlets).
+  - *Distributed Lesson:* Demonstrates single-point-of-failure (SPOF) vulnerabilities at the Edge CDN layer and motivated Reddit's adoption of multi-CDN and edge-resilience routing strategies.
+
+This volume of traffic also introduces the **distribution transparency** problem: from the user's perspective, Reddit looks and behaves like a single, unified system. However, behind the scenes, thousands of machines must coordinate seamlessly. This is the core goal of distributed systems design — but achieving it while maintaining performance is a major engineering challenge. Transparency types include:
 - **Access transparency**: users don't know if content is local or remote.
 - **Location transparency**: services don't know where data is physically stored.
 - **Failure transparency**: a server crash does not interrupt the user experience.
 - **Replication transparency**: multiple copies of data exist, but users see only one.
 
-**Sources:** [Interteam Marketing](https://www.interteammarketing.com/blog/reddit-statistics-2026), [Himalayas](https://himalayas.app/companies/reddit/tech-stack), [ByteByteGo](https://bytebytego.com/guides/reddits-core-architecture/)
+**Sources:** [Interteam Marketing](https://www.interteammarketing.com/blog/reddit-statistics-2026), [Reddit Status](https://www.redditstatus.com/), [Reddit Engineering (r/RedditEng)](https://www.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/), [Fastly Outage Report](https://www.fastly.com/blog/summary-of-june-8-outage), [ByteByteGo](https://bytebytego.com/guides/reddits-core-architecture/)
 
 ---
 
